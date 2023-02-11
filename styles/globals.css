@@ -3,7 +3,7 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
 
-.bg-pattern {
+.bg-patternIsometric {
     background-color: #e5e5f7;
     opacity: 0.9;
     background-image: linear-gradient(30deg, #8f00ff 12%, transparent 12.5%, transparent 87%, #8f00ff 87.5%, #8f00ff), linear-gradient(150deg, #8f00ff 12%, transparent 12.5%, transparent 87%, #8f00ff 87.5%, #8f00ff), linear-gradient(30deg, #8f00ff 12%, transparent 12.5%, transparent 87%, #8f00ff 87.5%, #8f00ff), linear-gradient(150deg, #8f00ff 12%, transparent 12.5%, transparent 87%, #8f00ff 87.5%, #8f00ff), linear-gradient(60deg, #8f00ff77 25%, transparent 25.5%, transparent 75%, #8f00ff77 75%, #8f00ff77), linear-gradient(60deg, #8f00ff77 25%, transparent 25.5%, transparent 75%, #8f00ff77 75%, #8f00ff77);
@@ -12,7 +12,23 @@
     background-attachment: fixed;
 }
 
-html{
-    scroll-behavior: smooth!important;
-    --scroll-behavior: smooth!important;
+.bg-patternIsometricDark {
+    background-color: #000000;
+    opacity: 0.9;
+    background-image: linear-gradient(30deg, #8f00ff 12%, transparent 12.5%, transparent 87%, #8f00ff 87.5%, #8f00ff), linear-gradient(150deg, #8f00ff 12%, transparent 12.5%, transparent 87%, #8f00ff 87.5%, #8f00ff), linear-gradient(30deg, #8f00ff 12%, transparent 12.5%, transparent 87%, #8f00ff 87.5%, #8f00ff), linear-gradient(150deg, #8f00ff 12%, transparent 12.5%, transparent 87%, #8f00ff 87.5%, #8f00ff), linear-gradient(60deg, #8f00ff77 25%, transparent 25.5%, transparent 75%, #8f00ff77 75%, #8f00ff77), linear-gradient(60deg, #8f00ff77 25%, transparent 25.5%, transparent 75%, #8f00ff77 75%, #8f00ff77);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    background-attachment: fixed;
+}
+
+.bg-patternCrossDark {
+    background-color: #000000;
+    opacity: 0.8;
+    background: radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent) 100px 100px, linear-gradient(#932efd 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #932efd 8px, #000000 8px) -4px 0;
+    background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
+}
+
+html {
+    scroll-behavior: smooth !important;
+    --scroll-behavior: smooth !important;
 }

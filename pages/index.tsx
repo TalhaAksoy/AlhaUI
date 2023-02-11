@@ -2,24 +2,35 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import Navbar from '@/components/allPageComponent/navbar'
-import {AiOutlineCaretDown} from '@react-icons/all-files/ai/AiOutlineCaretDown'
+import { AiOutlineCaretDown } from '@react-icons/all-files/ai/AiOutlineCaretDown'
+import {AiFillCheckCircle} from '@react-icons/all-files/ai/AiFillCheckCircle'
 
 const inter = Inter({ subsets: ['latin'] })
 
-function Flow()
-{
-  function WhyIUse(){
-    return(
-      <div id="usage" className='w-full h-screen flex flex-row flex-wrap bg-red-500'>
+function Flow() {
+  function WhyIUse() {
+    return (
+      <div id="usage" className='w-full h-screen flex flex-col justify-start items-center bg-patternCrossDark p-2'>
+        <div className='p-6 bg-purple-400 flex flex-col justify-center items-start rounded-lg shadow-2xl shadow-purple-900 text-white'>
+          <h1 className='font-bold text-2xl'>Why You Use AlhaUI ?</h1>
+          <div className='w-11/12 border-b-2 border-white mt-2 mb-2'></div>
+          <ul className='correct-mark flex flex-col justify-center items-start'>
+            <li className='flex justify-center items-center'> <AiFillCheckCircle className='mr-2'/> User Get All Component Source Code</li>
+            <li className='flex justify-center items-center'> <AiFillCheckCircle className='mr-2'/> All Components Are Customizable</li>
+          </ul>
+        </div>
       </div>
     );
   }
-  return(
+  return (
     <div className='w-full h-screen overflow-scroll bg-black'>
-      <div className='w-full h-screen bg-pattern flex flex-col gap-y-2 justify-center items-center'>
-        <span className='text-9xl'>Alha UI</span>
-        <span>Tailwind Based UI Library</span>
-        <span className='flex flex-row justify-center items-center'>Learn More &nbsp; <a href="#usage"><AiOutlineCaretDown className='text-2xl hover:cursor-pointer'/></a> </span>
+      <div className='w-full h-screen bg-patternIsometricDark flex flex-col gap-y-2 justify-center items-center'>
+        <div className='p-4 bg-purple-400 flex flex-col justify-center items-center rounded-lg shadow-2xl shadow-purple-900 text-white'>
+          <span className='text-9xl font-JetBrainsMono'>AlhaUI</span>
+          <span>Tailwind Based UI Library</span>
+          <span className='flex flex-row justify-center items-center'>Learn More</span>
+          <a href="#usage"><AiOutlineCaretDown className='text-2xl hover:cursor-pointer' /></a>
+        </div>
       </div>
       <WhyIUse></WhyIUse>
     </div>
