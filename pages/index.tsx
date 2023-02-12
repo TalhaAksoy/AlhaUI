@@ -10,13 +10,17 @@ const inter = Inter({ subsets: ['latin'] })
 function Flow() {
   function WhyIUse() {
     return (
-      <div id="usage" className='w-full h-screen flex flex-col justify-start items-center bg-patternCrossDark p-2'>
+      <div id="usage" className='w-full h-screen flex flex-row flex-wrap gap-x-6 justify-start items-center bg-patternCrossDark p-2'>
         <div className='p-6 bg-purple-400 flex flex-col justify-center items-start rounded-lg shadow-2xl shadow-purple-900 text-white'>
-          <h1 className='font-bold text-2xl'>Why You Use AlhaUI ?</h1>
+          <span className='text-white text-2xl'>Click And Go All Component You Need :D</span>
+        </div>
+        <div className='p-6 bg-purple-400 flex flex-col justify-center items-start rounded-lg shadow-2xl shadow-purple-900 text-white'>
+          <h1 className='font-bold text-4xl'>Why You Use AlhaUI ?</h1>
           <div className='w-11/12 border-b-2 border-white mt-2 mb-2'></div>
           <ul className='correct-mark flex flex-col justify-center items-start'>
-            <li className='flex justify-center items-center'> <AiFillCheckCircle className='mr-2'/> User Get All Component Source Code</li>
-            <li className='flex justify-center items-center'> <AiFillCheckCircle className='mr-2'/> All Components Are Customizable</li>
+            <li className='flex justify-center items-center text-2xl'> <AiFillCheckCircle className='mr-2'/> User Get All Component Source Code</li>
+            <li className='flex justify-center items-center text-2xl'> <AiFillCheckCircle className='mr-2'/> All Components Are Customizable</li>
+            <li className='flex justify-center items-center text-2xl'> <AiFillCheckCircle className='mr-2'/> No Installation Only Need TailwindCSs</li>
           </ul>
         </div>
       </div>
