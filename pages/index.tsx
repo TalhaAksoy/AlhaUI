@@ -3,25 +3,35 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import Navbar from '@/components/allPageComponent/navbar'
 import { AiOutlineCaretDown } from '@react-icons/all-files/ai/AiOutlineCaretDown'
-import {AiFillCheckCircle} from '@react-icons/all-files/ai/AiFillCheckCircle'
+import { AiFillCheckCircle } from '@react-icons/all-files/ai/AiFillCheckCircle'
+import { AiOutlineArrowLeft } from '@react-icons/all-files/ai/AiOutlineArrowLeft'
+import {AiOutlineYoutube} from '@react-icons/all-files/ai/AiOutlineYoutube'
+import {AiOutlineInstagram} from '@react-icons/all-files/ai/AiOutlineInstagram'
+import {FaTelegramPlane} from '@react-icons/all-files/fa/FaTelegramPlane'
 
 const inter = Inter({ subsets: ['latin'] })
 
 function Flow() {
   function WhyIUse() {
     return (
-      <div id="usage" className='w-full h-screen flex flex-row flex-wrap gap-x-6 justify-start items-center bg-patternCrossDark p-2'>
+      <div id="usage" className='w-full h-screen flex flex-col flex-wrap justify-around items-center bg-patternCrossDark p-2'>
         <div className='p-6 bg-purple-400 flex flex-col justify-center items-start rounded-lg shadow-2xl shadow-purple-900 text-white'>
-          <span className='text-white text-2xl'>Click And Go All Component You Need :D</span>
+          <span className='text-white text-2xl flex justify-center items-center gap-x-2'> <AiOutlineArrowLeft className='text-3xl' /> Click And Go All Component You Need :D</span>
         </div>
         <div className='p-6 bg-purple-400 flex flex-col justify-center items-start rounded-lg shadow-2xl shadow-purple-900 text-white'>
           <h1 className='font-bold text-4xl'>Why You Use AlhaUI ?</h1>
           <div className='w-11/12 border-b-2 border-white mt-2 mb-2'></div>
           <ul className='correct-mark flex flex-col justify-center items-start'>
-            <li className='flex justify-center items-center text-2xl'> <AiFillCheckCircle className='mr-2'/> User Get All Component Source Code</li>
-            <li className='flex justify-center items-center text-2xl'> <AiFillCheckCircle className='mr-2'/> All Components Are Customizable</li>
-            <li className='flex justify-center items-center text-2xl'> <AiFillCheckCircle className='mr-2'/> No Installation Only Need TailwindCSs</li>
+            <li className='flex justify-center items-center text-2xl'> <AiFillCheckCircle className='mr-2' /> User Get All Component Source Code</li>
+            <li className='flex justify-center items-center text-2xl'> <AiFillCheckCircle className='mr-2' /> All Components Are Customizable</li>
+            <li className='flex justify-center items-center text-2xl'> <AiFillCheckCircle className='mr-2' /> No Installation Only Need TailwindCSs</li>
           </ul>
+        </div>
+        <div className='p-6 bg-purple-400 flex flex-row gap-x-4 justify-center items-start rounded-lg shadow-2xl shadow-purple-900 text-white'>
+          <AiOutlineYoutube className='text-4xl'/>
+          <AiOutlineInstagram className='text-4xl'/>
+          <FaTelegramPlane className='text-4xl'/>
+          <AiOutlineYoutube className='text-4xl'/>
         </div>
       </div>
     );
